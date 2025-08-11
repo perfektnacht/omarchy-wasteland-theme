@@ -3,16 +3,16 @@
    ============================== */
 
 /* ---- Palette ---- */
-@define-color foreground #d1d0c5;   /* bone ash */
-@define-color background #1b1b1b;   /* soot */
-@define-color accent     #9e3b26;   /* rust red */
-@define-color accent2    #c75c36;   /* burnt orange */
-@define-color secondary  #2d3e4e;   /* weathered steel */
-@define-color muted      #5c5c5c;   /* ash gray */
-@define-color glow       #c5d977;   /* radioactive glow */
-@define-color ok         #7da453;   /* olive */
-@define-color warn       #c7a036;   /* hazard yellow */
-@define-color err        #b34747;   /* deep hazard red */
+@define-color foreground #d1d0c5;
+@define-color background #1b1b1b;
+@define-color accent     #9e3b26;
+@define-color accent2    #c75c36;
+@define-color secondary  #2d3e4e;
+@define-color muted      #5c5c5c;
+@define-color glow       #c5d977;
+@define-color ok         #7da453;
+@define-color warn       #c7a036;
+@define-color err        #b34747;
 
 /* ---- Base ---- */
 * {
@@ -23,15 +23,11 @@
 }
 
 window#waybar {
-  background: linear-gradient(135deg, @secondary, @background);
+  background: @background;
   color: @foreground;
-  transition-property: background-color, box-shadow, opacity;
-  transition-duration: 150ms;
   border-top: 2px solid @accent;
-  box-shadow: 0 -1px 0 rgba(0,0,0,0.5), 0 6px 18px rgba(0,0,0,0.35);
 }
 
-/* hide bar when in fullscreen if you use auto-hide */
 window#waybar.hidden {
   opacity: 0.05;
 }
@@ -42,7 +38,7 @@ window#waybar.hidden {
 .modules-right > * {
   padding: 0 10px;
   margin: 6px 6px;
-  background: rgba(27,27,27,0.50);
+  background: rgba(27,27,27,0.80);
   border-radius: 12px;
 }
 
@@ -57,40 +53,29 @@ window#waybar.hidden {
   padding: 6px 10px;
   margin: 6px 4px;
   border-radius: 10px;
-  transition: all 120ms ease;
-  box-shadow: inset 0 0 0 1px rgba(92,92,92,0.35);
 }
 
 #workspaces button:hover {
-  box-shadow: inset 0 0 0 1px @accent2;
   color: @glow;
 }
 
 #workspaces button.active {
   background: @accent;
   color: @background;
-  box-shadow: 0 0 8px @accent;
 }
 
 #workspaces button.urgent {
   background: @err;
   color: @background;
-  box-shadow: 0 0 10px @err;
 }
 
 /* ---- Clock ---- */
 #clock {
   font-weight: 700;
-  letter-spacing: 0.5px;
   color: @glow;
-  text-shadow: 0 0 6px rgba(197,217,119,0.45);
 }
 
-/* ---- CPU / Memory ---- */
-#cpu, #memory {
-  box-shadow: inset 0 0 0 1px rgba(92,92,92,0.35);
-}
-
+/* ---- System Info ---- */
 #cpu {
   color: @accent2;
 }
@@ -99,17 +84,14 @@ window#waybar.hidden {
   color: @secondary;
 }
 
-/* ---- Temperature ---- */
 #temperature {
   color: @ok;
 }
 
 #temperature.critical {
   color: @err;
-  text-shadow: 0 0 6px rgba(179,71,71,0.6);
 }
 
-/* ---- Battery ---- */
 #battery {
   color: @ok;
 }
@@ -118,104 +100,46 @@ window#waybar.hidden {
   color: @warn;
 }
 
-#battery.critical,
-#battery.critical.charging {
+#battery.critical {
   color: @err;
-  text-shadow: 0 0 6px rgba(179,71,71,0.6);
 }
 
 #battery.charging {
   color: @glow;
-  text-shadow: 0 0 6px rgba(197,217,119,0.35);
 }
 
-/* ---- Network ---- */
 #network {
   color: @foreground;
 }
 
 #network.disconnected {
   color: @err;
-  text-shadow: 0 0 4px rgba(179,71,71,0.5);
 }
 
-/* ---- Audio ---- */
 #pulseaudio {
   color: @foreground;
 }
 
 #pulseaudio.muted {
   color: @muted;
-  box-shadow: inset 0 0 0 1px rgba(92,92,92,0.35);
 }
 
-/* ---- Backlight ---- */
 #backlight {
   color: @accent2;
 }
 
 /* ---- Tray ---- */
-#tray > .passive {
-  -gtk-icon-effect: dim;
-  opacity: 0.6;
-}
-
 #tray > .needs-attention {
-  -gtk-icon-effect: highlight;
   color: @warn;
-  box-shadow: 0 0 10px rgba(199,160,54,0.6);
-}
-
-/* ---- Custom Modules ---- */
-#custom-logo, #custom-omarchy, #custom-sep {
-  color: @accent;
-}
-
-#custom-sep {
-  color: rgba(92,92,92,0.8);
-  padding: 0 4px;
 }
 
 /* ---- Tooltip ---- */
 tooltip {
-  background: rgba(27,27,27,0.98);
+  background: @background;
   border: 1px solid @accent;
   border-radius: 10px;
 }
 
 tooltip label {
   color: @foreground;
-}
-
-/* ---- Hover effects ---- */
-.modules-left > *:hover,
-.modules-center > *:hover,
-.modules-right > *:hover {
-  box-shadow: inset 0 0 0 1px @accent2, 0 0 10px rgba(199,92,54,0.25);
-  transition: all 120ms ease;
-}
-
-.modules-left > *:active,
-.modules-center > *:active,
-.modules-right > *:active {
-  transform: translateY(0.5px);
-}
-
-/* ---- Separator ---- */
-label.separator {
-  color: rgba(92,92,92,0.9);
-  padding: 0 2px;
-}
-
-/* ---- Small screens ---- */
-@media (max-width: 1366px) {
-  * { 
-    font-size: 11.5pt; 
-  }
-  .modules-left > *,
-  .modules-center > *,
-  .modules-right > * { 
-    margin: 4px; 
-    padding: 0 8px; 
-  }
 }
