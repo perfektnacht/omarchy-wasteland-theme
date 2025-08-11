@@ -1,0 +1,10 @@
+/* Force opaque Walker popup + rust border */
+popover.background, dialog.background, window.background {
+  background-color: #1b1b1b;       /* soot, fully opaque */
+  border: 2px solid #9e3b26;       /* rust */
+  border-radius: 12px;
+  box-shadow: none;
+}
+popover.background > box { background-color: #1b1b1b; } /* some builds need this */
+entry { background: #1b1b1b; color: #d1d0c5; border: 1px solid #9e3b26; }
+
