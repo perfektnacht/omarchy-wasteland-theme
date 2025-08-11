@@ -2,37 +2,41 @@
 # Omarchy — Wasteland Walker.css
 # ==============================
 
-/* --- Force opaque panel + rust border --- */
-window,
-dialog,
-popover,
-.menu,
-.sidebar,
-.content,
-.background {
-  background-color: rgba(27,27,27,0.98); /* near-opaque soot */
-  border: 2px solid @border;              /* rust */
+/* Selected text: radioactive glow */
+@define-color selected-text #c5d977;
+
+/* General text: bone ash */
+@define-color text #d1d0c5;
+
+/* Base: soot */
+@define-color base #1b1b1b;
+
+/* Border: rust */
+@define-color border #9e3b26;
+
+/* Foreground: bone ash */
+@define-color foreground #d1d0c5;
+
+/* Background: soot */
+@define-color background #1b1b1b;
+
+
+/* ==== Frame and Menu Styling ==== */
+frame, box, .background {
+  background-color: @background; /* fully opaque soot */
+  border: 2px solid @border;      /* rust */
   border-radius: 12px;
+  outline: none;
   box-shadow: none;
 }
 
-/* Kill the white outline some themes add on focus */
-*:focus { outline: none; }
-
-/* Entry/search field */
-entry, textview, .search {
-  background-color: rgba(27,27,27,0.98);
-  color: @foreground;
-  border: 1px solid @border;
-  border-radius: 10px;
-}
-
-/* List rows */
+/* Menu entries */
 row, list, .view {
   background-color: transparent;
   color: @foreground;
 }
 row:selected, .view:selected {
   background-color: @border;   /* rust */
-  color: @background;          /* soot text for contrast */
+  color: @background;          /* soot */
 }
+
