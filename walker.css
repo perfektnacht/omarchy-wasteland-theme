@@ -8,8 +8,8 @@
 /* General text: bone ash */
 @define-color text #d1d0c5;
 
-/* Base: soot */
-@define-color base #1b1b1b;
+/* Base: soot with slight opacity */
+@define-color base rgba(27, 27, 27, 0.95);
 
 /* Border: rust */
 @define-color border #9e3b26;
@@ -17,6 +17,6 @@
 /* Foreground: bone ash */
 @define-color foreground #d1d0c5;
 
-/* Background: soot */
-@define-color background #1b1b1b;
+/* Background: soot with slight opacity */
+@define-color background rgba(27, 27, 27, 0.95);
 
