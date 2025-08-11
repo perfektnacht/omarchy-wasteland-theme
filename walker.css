@@ -18,13 +18,6 @@ window {
     color: @foreground; /* Text color */
 }
 
-/* Inner content area with solid background */
-window > * {
-    background: @background; /* Solid soot background for content */
-    border-radius: 9px; /* Slightly smaller radius for inner content */
-    padding: 8px;
-}
-
 /* Optional: Style the entry box for consistency */
 entry {
     background: @base;
