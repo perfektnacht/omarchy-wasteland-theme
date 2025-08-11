@@ -1,0 +1,75 @@
+# ==================================
+# Omarchy — Wasteland Alacritty.toml
+# ==================================
+
+[window]
+opacity = 0.96
+dynamic_padding = true
+padding = { x = 6, y = 6 }
+decorations = "full"
+startup_mode = "Windowed"
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+bold   = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
+size = 11.5
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[colors]
+[colors.primary]
+background = '#1b1b1b' # soot
+foreground = '#d1d0c5' # bone ash
+
+# Normal colors
+[colors.normal]
+black   = '#1b1b1b' # bg
+red     = '#9e3b26' # rust
+green   = '#7da453' # olive/ok
+yellow  = '#c7a036' # hazard
+blue    = '#2d3e4e' # weathered steel
+magenta = '#7a6a5e' # dusty mauve
+cyan    = '#c5d977' # radioactive glow
+white   = '#e6e6e6'
+
+# Bright colors
+[colors.bright]
+black   = '#2a2a2a'
+red     = '#c75c36' # burnt orange
+green   = '#8bcf69'
+yellow  = '#e0b456'
+blue    = '#3e5468'
+magenta = '#9b897c'
+cyan    = '#d9e6a8'
+white   = '#ffffff'
+
+[colors.selection]
+text       = '#1b1b1b'
+background = '#c5d977'  # glow highlight
+
+[colors.cursor]
+text       = '#1b1b1b'
+cursor     = '#c5d977'  # glow block
+
+[colors.vi_mode_cursor]
+text       = '#1b1b1b'
+cursor     = '#c75c36'  # burnt orange
+
+[cursor]
+style = { shape = "Block", blinking = "On" }
+unfocused_hollow = true
+
+[selection]
+save_to_clipboard = true
+
+[mouse]
+hide_when_typing = true
+
+[bell]
+animation = "EaseOutExpo"
+duration = 0
+color = '#c5d977'

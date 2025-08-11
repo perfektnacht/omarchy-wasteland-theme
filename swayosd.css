@@ -1,0 +1,19 @@
+# ===============================
+# Omarchy — Wasteland Swayosd.css
+# ===============================
+
+/* Background: soot */
+@define-color background-color #1b1b1b;
+
+/* Border: rust */
+@define-color border-color #9e3b26;
+
+/* Label/Text: bone ash */
+@define-color label #d1d0c5;
+
+/* Image/Icon: radioactive glow */
+@define-color image #c5d977;
+
+/* Progress bar: olive */
+@define-color progress #7da453;
+

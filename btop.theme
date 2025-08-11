@@ -1,0 +1,94 @@
+# ==============================
+# Omarchy — Wasteland btop.theme
+# ==============================
+
+# Main background (solid soot)
+theme[main_bg]="#1b1b1b"
+
+# Main text (bone ash)
+theme[main_fg]="#d1d0c5"
+
+# Title color for boxes (glow)
+theme[title]="#c5d977"
+
+# Highlight color for keyboard shortcuts (burnt orange)
+theme[hi_fg]="#c75c36"
+
+# Background color of selected item in processes box (weathered steel)
+theme[selected_bg]="#2d3e4e"
+
+# Foreground color of selected item in processes box (bone ash)
+theme[selected_fg]="#d1d0c5"
+
+# Inactive/disabled text (ash gray)
+theme[inactive_fg]="#5c5c5c"
+
+# Text on top of graphs (glow)
+theme[graph_text]="#c5d977"
+
+# Background color of percentage meters (ash gray)
+theme[meter_bg]="#5c5c5c"
+
+# Misc colors for processes box (rust)
+theme[proc_misc]="#9e3b26"
+
+# Cpu box outline (burnt orange)
+theme[cpu_box]="#c75c36"
+
+# Memory/disks box outline (olive)
+theme[mem_box]="#7da453"
+
+# Net up/down box outline (rust)
+theme[net_box]="#9e3b26"
+
+# Processes box outline (hazard red)
+theme[proc_box]="#b34747"
+
+# Box divider line and small box lines (ash gray)
+theme[div_line]="#5c5c5c"
+
+# Temperature graph colors (hazard red → burnt orange → hazard red)
+theme[temp_start]="#b34747"
+theme[temp_mid]="#c75c36"
+theme[temp_end]="#b34747"
+
+# CPU graph colors (burnt orange → rust → rust)
+theme[cpu_start]="#c75c36"
+theme[cpu_mid]="#9e3b26"
+theme[cpu_end]="#9e3b26"
+
+# Mem/Disk free meter (hazard red)
+theme[free_start]="#b34747"
+theme[free_mid]="#b34747"
+theme[free_end]="#b34747"
+
+# Mem/Disk cached meter (dusty mauve)
+theme[cached_start]="#7a6a5e"
+theme[cached_mid]="#7a6a5e"
+theme[cached_end]="#7a6a5e"
+
+# Mem/Disk available meter (olive)
+theme[available_start]="#7da453"
+theme[available_mid]="#7da453"
+theme[available_end]="#7da453"
+
+# Mem/Disk used meter (hazard red)
+theme[used_start]="#b34747"
+theme[used_mid]="#b34747"
+theme[used_end]="#b34747"
+
+# Download graph colors (olive → steel blue → steel blue)
+theme[download_start]="#7da453"
+theme[download_mid]="#2d3e4e"
+theme[download_end]="#2d3e4e"
+
+# Upload graph colors (hazard red)
+theme[upload_start]="#b34747"
+theme[upload_mid]="#b34747"
+theme[upload_end]="#b34747"
+
+# Process box gradient (olive → steel blue → steel blue)
+theme[process_start]="#7da453"
+theme[process_mid]="#2d3e4e"
+theme[process_end]="#2d3e4e"
+
