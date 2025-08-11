@@ -37,6 +37,9 @@ return {
         hi Function     guifg=#c5d977 gui=bold
         hi Keyword      guifg=#9e3b26 gui=italic
         hi Type         guifg=#e6e6e6
+
+        " --- LazyVim Dashboard Customization ---
+        hi LazyHeader   guifg=#d1d0c5 guibg=#202020 gui=bold
       ]])
 			-- optional: terminal palette to match your terminal
 			vim.g.terminal_color_0 = "#1b1b1b"
