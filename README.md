@@ -104,6 +104,7 @@ This theme is released under the MIT License. Feel free to use, modify, and dist
 - **Background Images**: 
   - [Ben Granados](https://unsplash.com/@benjamingranados) via Unsplash
   - [Ling Hua](https://unsplash.com/@linghua2001) via Unsplash
+  - [Clay Banks](https://unsplash.com/@claybanks) via Unsplash 
 - **Inspiration**: Post-apocalyptic aesthetics from Fallout, Mad Max, and digital decay art
 - **Framework**: Built for [Omarchy](https://omarchy.org) by DHH
 
