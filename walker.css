@@ -2,41 +2,9 @@
 # Omarchy — Wasteland Walker.css
 # ==============================
 
-/* Selected text: radioactive glow */
-@define-color selected-text #c5d977;
-
-/* General text: bone ash */
-@define-color text #d1d0c5;
-
-/* Base: soot */
-@define-color base #1b1b1b;
-
-/* Border: rust */
-@define-color border #9e3b26;
-
-/* Foreground: bone ash */
-@define-color foreground #d1d0c5;
-
-/* Background: soot */
-@define-color background #1b1b1b;
-
-
-/* ==== Frame and Menu Styling ==== */
-frame, box, .background {
-  background-color: @background; /* fully opaque soot */
-  border: 2px solid @border;      /* rust */
-  border-radius: 12px;
-  outline: none;
-  box-shadow: none;
-}
-
-/* Menu entries */
-row, list, .view {
-  background-color: transparent;
-  color: @foreground;
-}
-row:selected, .view:selected {
-  background-color: @border;   /* rust */
-  color: @background;          /* soot */
-}
-
+@define-color selected-text #c5d977; /* glow */
+@define-color text          #d1d0c5; /* bone ash */
+@define-color base          #1b1b1b; /* soot */
+@define-color border        #9e3b26; /* rust */
+@define-color foreground    #d1d0c5; /* bone ash */
+@define-color background    #1b1b1b; /* soot */
