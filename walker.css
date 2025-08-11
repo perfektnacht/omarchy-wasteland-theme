@@ -1,6 +1,7 @@
 /* ==============================
    Omarchy — Wasteland Walker.css
    ============================== */
+
 @define-color selected-text #c5d977; /* glow */
 @define-color text          #d1d0c5; /* bone ash */
 @define-color base          #1b1b1b; /* soot */
