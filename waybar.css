@@ -48,7 +48,7 @@ window#waybar.hidden {
 }
 
 #workspaces button {
-  color: @foreground;
+  color: @glow;
   background: transparent;
   padding: 6px 10px;
   margin: 6px 4px;
@@ -61,7 +61,7 @@ window#waybar.hidden {
 
 #workspaces button.active {
   background: @background;
-  color: @foreground;
+  color: @glow;
 }
 
 #workspaces button.urgent {
