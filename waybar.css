@@ -77,15 +77,15 @@ window#waybar.hidden {
 
 /* ---- System Info ---- */
 #cpu {
-  color: @accent2;
+  color: @glow;
 }
 
 #memory {
-  color: @secondary;
+  color: @glow;
 }
 
 #temperature {
-  color: @ok;
+  color: @glow;
 }
 
 #temperature.critical {
@@ -93,7 +93,7 @@ window#waybar.hidden {
 }
 
 #battery {
-  color: @ok;
+  color: @glow;
 }
 
 #battery.warning {
@@ -109,7 +109,7 @@ window#waybar.hidden {
 }
 
 #network {
-  color: @foreground;
+  color: @glow;
 }
 
 #network.disconnected {
@@ -117,7 +117,7 @@ window#waybar.hidden {
 }
 
 #pulseaudio {
-  color: @foreground;
+  color: @glow;
 }
 
 #pulseaudio.muted {
@@ -125,10 +125,14 @@ window#waybar.hidden {
 }
 
 #backlight {
-  color: @accent2;
+  color: @glow;
 }
 
 /* ---- Tray ---- */
+#tray {
+  color: @glow;
+}
+
 #tray > .needs-attention {
   color: @warn;
 }
