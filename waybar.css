@@ -16,7 +16,7 @@
 
 /* ---- Base ---- */
 * {
-  font-family: "CaskaydiaCove Nerd Font", ui-sans-serif, system-ui, sans-serif;
+  font-family: "CaskaydiaMono Nerd Font", sans-serif;
   font-size: 12.5pt;
   border: none;
   box-shadow: none;
@@ -44,7 +44,6 @@ window#waybar.hidden {
   margin: 6px 6px;
   background: rgba(27,27,27,0.50);
   border-radius: 12px;
-  backdrop-filter: blur(6px);
 }
 
 /* ---- Workspaces ---- */
