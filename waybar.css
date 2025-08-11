@@ -60,9 +60,8 @@ window#waybar.hidden {
 }
 
 #workspaces button.active {
-  background: @accent;
-  color: @background;
-  border-radius: 10px;
+  background: @background;
+  color: @foreground;
 }
 
 #workspaces button.urgent {
