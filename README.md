@@ -2,7 +2,9 @@
 
 A post-apocalyptic dark theme for [Omarchy](https://omarchy.org) that embraces the beauty of digital decay. Experience the perfect blend of rust, ash, and radioactive glow across your entire desktop environment.
 
-![Wasteland Color Palette](assets/wasteland-palette.png)
+![Wasteland Theme Screenshot](https://github.com/perfektnacht/omarchy-wasteland-theme/assets/Desktop.png)
+
+![Wasteland Color Palette](https://github.com/perfektnacht/omarchy-wasteland-theme/assets/wasteland-palette.png)
 
 ## Features
 
