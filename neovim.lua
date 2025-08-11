@@ -1,5 +1,6 @@
 return {
 	{
+		name = "wasteland-colorscheme",
 		lazy = false,
 		priority = 1000,
 		config = function()
