@@ -1,70 +1,54 @@
 return {
+	{ "NTBBloodbath/doom-one.nvim" },
 	{
+		"LazyVim/LazyVim",
+		opts = { colorscheme = "doom-one" },
+	},
+	{
+		-- repaint Doom One with Wasteland colors (safe :hi commands)
 		"NTBBloodbath/doom-one.nvim",
-		priority = 1001, -- run after the theme loads
+		priority = 1001,
 		config = function()
-			-- apply the colorscheme first
 			vim.cmd.colorscheme("doom-one")
+			vim.cmd([[
+        " --- Wasteland palette repaint ---
+        hi Normal       guifg=#d1d0c5 guibg=#1b1b1b
+        hi NormalFloat  guifg=#d1d0c5 guibg=#202020
+        hi FloatBorder  guifg=#2d3e4e guibg=#202020
+        hi LineNr       guifg=#5c5c5c guibg=#1b1b1b
+        hi CursorLineNr guifg=#c5d977
+        hi CursorLine   guibg=#222222
+        hi VertSplit    guifg=#2d3e4e guibg=#1b1b1b
+        hi WinSeparator guifg=#2d3e4e guibg=#1b1b1b
 
-			-- wasteland palette
-			local c = {
-				bg = "#1b1b1b",
-				fg = "#d1d0c5",
-				rust = "#9e3b26",
-				burn = "#c75c36",
-				steel = "#2d3e4e",
-				ash = "#5c5c5c",
-				glow = "#c5d977",
-				ok = "#7da453",
-				warn = "#c7a036",
-				err = "#b34747",
-				bwhite = "#e6e6e6",
-			}
-			local function hi(g, o)
-				vim.api.nvim_set_hl(0, g, o)
-			end
+        hi Visual       guibg=#2d3e4e
+        hi Search       guifg=#1b1b1b guibg=#c5d977
+        hi IncSearch    guifg=#1b1b1b guibg=#c75c36
+        hi Pmenu        guifg=#d1d0c5 guibg=#202020
+        hi PmenuSel     guifg=#1b1b1b guibg=#9e3b26 gui=bold
 
-			-- Core UI
-			hi("Normal", { fg = c.fg, bg = c.bg })
-			hi("NormalFloat", { fg = c.fg, bg = "#202020" })
-			hi("FloatBorder", { fg = c.steel, bg = "#202020" })
-			hi("LineNr", { fg = c.ash, bg = c.bg })
-			hi("CursorLineNr", { fg = c.glow, bg = c.bg })
-			hi("CursorLine", { bg = "#2i22222" })
-			hi("VertSplit", { fg = c.steel, bg = c.bg })
-			hi("WinSeparator", { fg = c.steel, bg = c.bg })
+        hi ErrorMsg     guifg=#1b1b1b guibg=#b34747 gui=bold
+        hi WarningMsg   guifg=#1b1b1b guibg=#c7a036 gui=bold
+        hi Question     guifg=#7da453 gui=bold
 
-			-- Selections / popups
-			hi("Visual", { bg = c.steel })
-			hi("Search", { fg = c.bg, bg = c.glow })
-			hi("IncSearch", { fg = c.bg, bg = c.burn })
-			hi("Pmenu", { fg = c.fg, bg = "#202020" })
-			hi("PmenuSel", { fg = c.bg, bg = c.rust, bold = true })
-
-			-- Messages / diagnostics
-			hi("ErrorMsg", { fg = c.bg, bg = c.err, bold = true })
-			hi("WarningMsg", { fg = c.bg, bg = c.warn, bold = true })
-			hi("Question", { fg = c.ok, bold = true })
-
-			-- Syntax baseline (Treesitter/LSP will refine these)
-			hi("Comment", { fg = c.ash, italic = true })
-			hi("String", { fg = c.ok })
-			hi("Number", { fg = c.burn })
-			hi("Function", { fg = c.glow, bold = true })
-			hi("Keyword", { fg = c.rust, italic = true })
-			hi("Type", { fg = c.bwhite })
-
-			-- Terminal palette (so Alacritty/Ghostty feel the same)
-			vim.g.terminal_color_0 = c.bg
-			vim.g.terminal_color_1 = c.rust
-			vim.g.terminal_color_2 = c.ok
-			vim.g.terminal_color_3 = c.warn
-			vim.g.terminal_color_4 = c.steel
-			vim.g.terminal_color_5 = "#7a6a5e" -- dusty mauve
-			vim.g.terminal_color_6 = c.glow
-			vim.g.terminal_color_7 = c.bwhite
+        hi Comment      guifg=#5c5c5c gui=italic
+        hi String       guifg=#7da453
+        hi Number       guifg=#c75c36
+        hi Function     guifg=#c5d977 gui=bold
+        hi Keyword      guifg=#9e3b26 gui=italic
+        hi Type         guifg=#e6e6e6
+      ]])
+			-- optional: terminal palette to match your terminal
+			vim.g.terminal_color_0 = "#1b1b1b"
+			vim.g.terminal_color_1 = "#9e3b26"
+			vim.g.terminal_color_2 = "#7da453"
+			vim.g.terminal_color_3 = "#c7a036"
+			vim.g.terminal_color_4 = "#2d3e4e"
+			vim.g.terminal_color_5 = "#7a6a5e"
+			vim.g.terminal_color_6 = "#c5d977"
+			vim.g.terminal_color_7 = "#e6e6e6"
 			vim.g.terminal_color_8 = "#2a2a2a"
-			vim.g.terminal_color_9 = c.burn
+			vim.g.terminal_color_9 = "#c75c36"
 			vim.g.terminal_color_10 = "#8bcf69"
 			vim.g.terminal_color_11 = "#e0b456"
 			vim.g.terminal_color_12 = "#3e5468"
