@@ -5,8 +5,6 @@ A post-apocalyptic dark theme for [Omarchy](https://omarchy.org) that embraces t
 ![Wasteland Theme Screenshot](https://raw.githubusercontent.com/perfektnacht/omarchy-wasteland-theme/main/assets/Desktop.png)
 ![Wasteland Palette](https://raw.githubusercontent.com/perfektnacht/omarchy-wasteland-theme/main/assets/wasteland_palette.png)
 
-![Wasteland Color Palette](https://github.com/perfektnacht/omarchy-wasteland-theme/tree/main/assets/wasteland_palette.png)
-
 ## Features
 
 - **Cohesive Design** - Unified color scheme across all Omarchy components
