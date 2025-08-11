@@ -8,6 +8,14 @@ return {
 			require("wasteland").setup()
 			vim.cmd.colorscheme("wasteland")
 
+			-- Force Snacks highlights after a delay to ensure they stick
+			vim.defer_fn(function()
+				vim.cmd("hi SnacksDashboardHeader guifg=#c5d977 gui=bold")
+				vim.cmd("hi SnacksDashboardDesc guifg=#c5d977 gui=bold")
+				vim.cmd("hi SnacksDashboardFooter guifg=#c5d977")
+				vim.cmd("hi SnacksDashboardKey guifg=#c5d977")
+			end, 100)
+
 			-- Set terminal colors to match the theme
 			vim.g.terminal_color_0 = "#1b1b1b" -- base (soot)
 			vim.g.terminal_color_1 = "#9e3b26" -- rust
