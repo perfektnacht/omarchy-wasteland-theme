@@ -20,11 +20,12 @@
   font-size: 12.5pt;
   border: none;
   box-shadow: none;
+  color: @glow;
 }
 
 window#waybar {
   background: @background;
-  color: @foreground;
+  color: @glow;
   border-top: 2px solid @accent;
 }
 
