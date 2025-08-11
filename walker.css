@@ -1,7 +1,6 @@
 /* ==============================
    Omarchy — Wasteland Walker.css
    ============================== */
-
 @define-color selected-text #c5d977; /* glow */
 @define-color text          #d1d0c5; /* bone ash */
 @define-color base          #1b1b1b; /* soot */
@@ -12,9 +11,10 @@
 /* Style the main Walker window */
 window {
     background: @background; /* Solid soot background */
-    border: 2px solid @border; /* Rust-colored border */
+    border: 3px solid; /* Match Hyprland border width */
+    border-image: linear-gradient(45deg, #9e3b26, #c5d977) 1; /* Match Hyprland gradient */
     border-radius: 12px; /* Matches hyprland.conf rounding */
-    opacity: 1.0; /* Fully opaque to override Hyprland’s 0.97 */
+    opacity: 1.0; /* Fully opaque to override Hyprland's 0.97 */
     color: @foreground; /* Text color */
 }
 
