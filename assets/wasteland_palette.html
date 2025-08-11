@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wasteland Color Palette</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Courier New', monospace;
+            background: #1b1b1b;
+            color: #d1d0c5;
+        }
+        
+        .palette-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #202020;
+            border-radius: 12px;
+            padding: 30px;
+            border: 3px solid #2d3e4e;
+        }
+        
+        .title {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            color: #c5d977;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(197, 217, 119, 0.3);
+        }
+        
+        .subtitle {
+            text-align: center;
+            font-size: 16px;
+            color: #5c5c5c;
+            margin-bottom: 40px;
+        }
+        
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .color-card {
+            background: #1b1b1b;
+            border: 2px solid #2d3e4e;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s ease;
+        }
+        
+        .color-card:hover {
+            transform: translateY(-2px);
+            border-color: #9e3b26;
+        }
+        
+        .color-swatch {
+            height: 80px;
+            width: 100%;
+        }
+        
+        .color-info {
+            padding: 15px;
+        }
+        
+        .color-name {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        
+        .color-hex {
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            color: #5c5c5c;
+            margin-bottom: 5px;
+        }
+        
+        .color-description {
+            font-size: 12px;
+            color: #d1d0c5;
+            font-style: italic;
+        }
+        
+        .usage-section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #2d3e4e;
+        }
+        
+        .usage-title {
+            font-size: 20px;
+            color: #c5d977;
+            margin-bottom: 15px;
+        }
+        
+        .usage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .usage-item {
+            background: #2a2a2a;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #9e3b26;
+        }
+        
+        .usage-category {
+            color: #c75c36;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #2d3e4e;
+            color: #5c5c5c;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="palette-container">
+        <h1 class="title">WASTELAND</h1>
+        <p class="subtitle">A post-apocalyptic color palette for the modern developer</p>
+        
+        <div class="color-grid">
+            <div class="color-card">
+                <div class="color-swatch" style="background: #1b1b1b;"></div>
+                <div class="color-info">
+                    <div class="color-name" style="color: #d1d0c5;">Base</div>
+                    <div class="color-hex">#1b1b1b</div>
+                    <div class="color-description">Soot - Main background</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-swatch" style="background: #d1d0c5;"></div>
+                <div class="color-info">
+                    <div class="color-name" style="color: #d1d0c5;">Text</div>
+                    <div class="color-hex">#d1d0c5</div>
+                    <div class="color-description">Bone ash - Primary text</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-swatch" style="background: #9e3b26;"></div>
+                <div class="color-info">
+                    <div class="color-name" style="color: #9e3b26;">Rust</div>
+                    <div class="color-hex">#9e3b26</div>
+                    <div class="color-description">Rust red - Keywords, borders</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-swatch" style="background: #c75c36;"></div>
+                <div class="color-info">
+                    <div class="color-name" style="color: #c75c36;">Burnt</div>
+                    <div class="color-hex">#c75c36</div>
+                    <div class="color-description">Burnt orange - Numbers, constants</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-swatch" style="background: #c5d977;"></div>
+                <div class="color-info">
+                    <div class="color-name" style="color: #c5d977;">Glow</div>
+                    <div class="color-hex">#c5d977</div>
+                    <div class="color-description">Radioactive glow - Functions, highlights</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-swatch" style="background: #7da453;"></div>
+                <div class="color-info">
+                    <div class="color-name" style="color: #7da453;">Olive</div>
+                    <div class="color-hex">#7da453</div>
+                    <div class="color-description">Olive - Strings, success states</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-swatch" style="background: #2d3e4e;"></div>
+                <div class="color-info">
+                    <div class="color-name" style="color: #2d3e4e;">Steel</div>
+                    <div class="color-hex">#2d3e4e</div>
+                    <div class="color-description">Weathered steel - UI elements</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-swatch" style="background: #5c5c5c;"></div>
+                <div class="color-info">
+                    <div class="color-name" style="color: #5c5c5c;">Ash</div>
+                    <div class="color-hex">#5c5c5c</div>
+                    <div class="color-description">Ash gray - Comments, muted text</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-swatch" style="background: #c7a036;"></div>
+                <div class="color-info">
+                    <div class="color-name" style="color: #c7a036;">Warning</div>
+                    <div class="color-hex">#c7a036</div>
+                    <div class="color-description">Hazard yellow - Warnings</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <div class="color-swatch" style="background: #b34747;"></div>
+                <div class="color-info">
+                    <div class="color-name" style="color: #b34747;">Error</div>
+                    <div class="color-hex">#b34747</div>
+                    <div class="color-description">Deep hazard red - Errors</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="usage-section">
+            <h3 class="usage-title">Usage Guide</h3>
+            <div class="usage-grid">
+                <div class="usage-item">
+                    <div class="usage-category">Editor</div>
+                    <div>Background: Base (#1b1b1b)<br>
+                    Text: Bone Ash (#d1d0c5)<br>
+                    Selection: Steel (#2d3e4e)</div>
+                </div>
+                
+                <div class="usage-item">
+                    <div class="usage-category">Syntax</div>
+                    <div>Keywords: Rust (#9e3b26)<br>
+                    Functions: Glow (#c5d977)<br>
+                    Strings: Olive (#7da453)<br>
+                    Comments: Ash (#5c5c5c)</div>
+                </div>
+                
+                <div class="usage-item">
+                    <div class="usage-category">UI Elements</div>
+                    <div>Borders: Steel (#2d3e4e)<br>
+                    Active: Glow (#c5d977)<br>
+                    Warning: Hazard (#c7a036)<br>
+                    Error: Deep Red (#b34747)</div>
+                </div>
+                
+                <div class="usage-item">
+                    <div class="usage-category">Terminal</div>
+                    <div>Compatible with most terminal emulators<br>
+                    Supports 16-color and true-color modes<br>
+                    Optimized for readability</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Wasteland Theme - Embrace the post-apocalyptic aesthetic</p>
+            <p>Perfect for long coding sessions in the digital wasteland</p>
+        </div>
+    </div>
+</body>
+</html>
