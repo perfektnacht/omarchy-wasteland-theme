@@ -58,6 +58,7 @@ This theme provides configurations for:
 - **Hyprlock** (`hyprlock.conf`) - Lock screen theme
 - **SwayOSD** (`swayosd.css`) - On-screen display styling
 - **Backgrounds** - Curated post-apocalyptic wallpapers
+- Chromium - Extended theme to chromium browser
 
 ## Backgrounds
 
